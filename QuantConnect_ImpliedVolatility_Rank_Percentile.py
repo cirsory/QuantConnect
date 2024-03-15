@@ -76,7 +76,7 @@ class MyAlgorithm(QCAlgorithm):
         # Plot the IVR dynamically
         self.Plot('Implied Volatility', 'IV Rank', IVR)
         self.Plot('Implied Volatility', 'IV Percentil', IVP)
-        self.Debug(f'Price: {current_iv} Current IV Rank: {IVR} Current IV Percentile: {IVP}')
+        self.Debug(f'Previous Day Price: {current_iv} Current IV Rank: {IVR} Current IV Percentile: {IVP}')
 
     def OnData(self, slice):
         pass
